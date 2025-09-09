@@ -1,33 +1,45 @@
-# 🏋️ BMI Calculator
+# 🧮 Age Calculator in C#
 
-A C# console application that calculates a person’s Body Mass Index (BMI) based on their age, weight (in kilograms), and height (in meters). The program rounds the BMI to two decimal places and provides a simple health interpretation (underweight, normal, overweight, obese). This project helps practice floating-point arithmetic, conditionals, and user input handling.
+This is a simple console application written in **C#** that calculates your age based on your year of birth.  
+It also categorizes you into different life stages (Baby, Child, Teenager, Young Adult, etc.) depending on your age.
 
-⚡ Installation  
-Clone the repository with:  
-git clone https://github.com/AkaMicky/BMICalculator.git  
-cd BMICalculator  
-Open the project in Visual Studio (or any C# IDE) and run the program.
+## 🚀 Features
+- Takes user input for year of birth.
+- Automatically calculates your age using the current year.
+- Categorizes your life stage:
+  - 👶 Baby/Toddler (0–5)
+  - 🧒 Child (6–12)
+  - 🧑 Teenager (13–18)
+  - 🧑‍💼 Young Adult (19–27)
+  - 🧔 Middle Age (28–38)
+  - 👴 Elder (39–55)
+  - 🧓 Old Elder (56+)
 
-🎯 Usage  
-When prompted, enter your age, weight in kilograms, and height in meters. The program calculates your BMI and outputs the value along with a health category.  
-Example:  
-Enter your age: 20  
-Enter your weight (kg): 70  
-Enter your height (m): 1.75  
-Your BMI is 22.86 – Normal weight
+## 💻 How to Run
+git clone https://github.com/AkaMICKY/Age-Calculator.git
 
-🔮 Future Improvements  
-- Add TryParse to handle invalid input and prevent crashes.  
-- Allow height input in centimeters or feet/inches.  
-- Provide age-adjusted health recommendations.  
-- Optional: graphical or color-coded output of BMI category.  
-- Enable multiple input formats so the user doesn’t have to manually convert weight to kg or height to meters.  
-- Display the user’s BMI category directly instead of requiring them to trace a graph manually.
+1. Open the project in **Visual Studio** or your preferred C# IDE.  
+2. Build and run the program.  
+3. Enter your **year of birth** when prompted.  
+4. The program will display:
+   - Your current age  
+   - Your life stage  
 
-🛠️ Technologies Used  
-C#, .NET Console Application
+## 📌 Example Output
+Hello, I Calculate How Old You Are, using Your BirthDay
+SO Lets get Started
+When Is Your BirthDay(Year)? : 2009
+You Are 16 Years Old
+Hence You are a Teenager ;)
 
-📚 What I Learned  
-- Using `Math.Pow()` and floating-point arithmetic in C#  
-- Accepting multiple user inputs via `Console.ReadLine()`  
-- Rounding numbers with `Math.Round()`  
+## ⚠️ Notes
+- Make sure to enter a valid year (e.g., 2005).
+- If you enter text or an invalid year, the program may crash.
+- This will be improved later with error handling.
+
+## 🛠️ Future Improvements
+- Add error handling for invalid input.
+- Extend life stages with more categories.
+- Add month/day support for more accurate age calculation.
+
+👨‍💻 Created by **Akanmen Michael** (AkaMICKY)
