@@ -35,7 +35,6 @@ You are Normal weight ✅
 🚀 **Future Improvements**  
 - ✅ Add input validation with double.TryParse()  
 - ✅ Allow height input in cm or ft/inches  
-- ✅ Round BMI neatly with Math.Round()  
 - ✅ Later expand into a GUI or web app version  
 
 📚 **What I Learned**  
