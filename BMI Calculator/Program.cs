@@ -20,16 +20,19 @@ namespace BMI_Calculator
             double BMI = MASS /HEIGHT2; //Divides MASS By Square of HEIGHT(HEIGHT2) 
             double BMI_round = Math.Round(BMI, 2); //Rounds BMI to 2 Decimal Places
             Console.WriteLine("Your BMI Is " + BMI_round);
-            if (BMI_round < 18.5 )
+            if (BMI_round < 18.5)
             {
                 Console.WriteLine("You are Under-Weight");
-            } else if (BMI_round > 18.5 && BMI_round < 24.9)
+            }
+            else if (BMI_round > 18.5 && BMI_round < 24.9)
             {
                 Console.WriteLine("You are Healthy :)");
-            } else if (BMI_round > 25 && BMI_round < 29.9)
+            }
+            else if (BMI_round > 25 && BMI_round < 29.9)
             {
                 Console.WriteLine("You are Over-Weight");
-            }else if (BMI_round > 30)
+            }
+            else 
             {
                 Console.WriteLine("You are Obese!!");
             }
