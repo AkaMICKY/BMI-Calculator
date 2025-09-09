@@ -1,45 +1,46 @@
-# 🧮 Age Calculator in C#
+# 🏋️ BMI Calculator  
 
-This is a simple console application written in **C#** that calculates your age based on your year of birth.  
-It also categorizes you into different life stages (Baby, Child, Teenager, Young Adult, etc.) depending on your age.
+📌 **Description**  
+A simple C# console app that calculates your **Body Mass Index (BMI)** from your weight (kg) and height (m). It then tells you which category you fall into:  
+⚪ Underweight  
+🟢 Normal weight  
+🟡 Overweight  
+🔴 Obese  
 
-## 🚀 Features
-- Takes user input for year of birth.
-- Automatically calculates your age using the current year.
-- Categorizes your life stage:
-  - 👶 Baby/Toddler (0–5)
-  - 🧒 Child (6–12)
-  - 🧑 Teenager (13–18)
-  - 🧑‍💼 Young Adult (19–27)
-  - 🧔 Middle Age (28–38)
-  - 👴 Elder (39–55)
-  - 🧓 Old Elder (56+)
+This project is great practice for:  
+➡️ User input  
+➡️ Conditionals (if/else)  
+➡️ Floating-point calculations  
 
-## 💻 How to Run
-git clone https://github.com/AkaMICKY/Age-Calculator.git
+⚙️ **Installation**  
+1. Clone the repo with:  
+   git clone https://github.com/AkaMICKY/BMI-Calculator.git  
+   cd BMI-Calculator  
+2. Open the project in **Visual Studio**  
+3. Run it 🎉  
 
-1. Open the project in **Visual Studio** or your preferred C# IDE.  
-2. Build and run the program.  
-3. Enter your **year of birth** when prompted.  
-4. The program will display:
-   - Your current age  
-   - Your life stage  
+▶️ **Usage**  
+- Enter your **weight in kg** and **height in meters** when prompted  
+- The program calculates your BMI and tells you your category  
 
-## 📌 Example Output
-Hello, I Calculate How Old You Are, using Your BirthDay
-SO Lets get Started
-When Is Your BirthDay(Year)? : 2009
-You Are 16 Years Old
-Hence You are a Teenager ;)
+💡 Example:  
+Input:  
+Weight = 70  
+Height = 1.75  
 
-## ⚠️ Notes
-- Make sure to enter a valid year (e.g., 2005).
-- If you enter text or an invalid year, the program may crash.
-- This will be improved later with error handling.
+Output:  
+Your BMI is 22.86  
+You are Normal weight ✅  
 
-## 🛠️ Future Improvements
-- Add error handling for invalid input.
-- Extend life stages with more categories.
-- Add month/day support for more accurate age calculation.
+🚀 **Future Improvements**  
+- ✅ Add input validation with double.TryParse()  
+- ✅ Allow height input in cm or ft/inches  
+- ✅ Round BMI neatly with Math.Round()  
+- ✅ Later expand into a GUI or web app version  
 
-👨‍💻 Created by **Akanmen Michael** (AkaMICKY)
+📚 **What I Learned**  
+- ✍️ Capturing user input with Console.ReadLine()  
+- 🔄 Converting strings to numbers using Convert.ToDouble()  
+- 📏 Rounding numbers with Math.Round()  
+- 🔀 Using if / else if / else to classify results  
+
