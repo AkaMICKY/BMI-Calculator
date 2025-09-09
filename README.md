@@ -1,33 +1,45 @@
-# 🏋️ BMI Calculator
+# 🏋️ BMI Calculator  
 
-A C# console application that calculates a person’s Body Mass Index (BMI) based on their age, weight (in kilograms), and height (in meters). The program rounds the BMI to two decimal places and provides a simple health interpretation (underweight, normal, overweight, obese). This project helps practice floating-point arithmetic, conditionals, and user input handling.
+📌 **Description**  
+A simple C# console app that calculates your **Body Mass Index (BMI)** from your weight (kg) and height (m). It then tells you which category you fall into:  
+⚪ Underweight  
+🟢 Normal weight  
+🟡 Overweight  
+🔴 Obese  
 
-⚡ Installation  
-Clone the repository with:  
-git clone https://github.com/AkaMicky/BMICalculator.git  
-cd BMICalculator  
-Open the project in Visual Studio (or any C# IDE) and run the program.
+This project is great practice for:  
+➡️ User input  
+➡️ Conditionals (if/else)  
+➡️ Floating-point calculations  
 
-🎯 Usage  
-When prompted, enter your age, weight in kilograms, and height in meters. The program calculates your BMI and outputs the value along with a health category.  
-Example:  
-Enter your age: 20  
-Enter your weight (kg): 70  
-Enter your height (m): 1.75  
-Your BMI is 22.86 – Normal weight
+⚙️ **Installation**  
+1. Clone the repo with:  
+   git clone https://github.com/AkaMICKY/BMI-Calculator.git  
+   cd BMI-Calculator  
+2. Open the project in **Visual Studio**  
+3. Run it 🎉  
 
-🔮 Future Improvements  
-- Add TryParse to handle invalid input and prevent crashes.  
-- Allow height input in centimeters or feet/inches.  
-- Provide age-adjusted health recommendations.  
-- Optional: graphical or color-coded output of BMI category.  
-- Enable multiple input formats so the user doesn’t have to manually convert weight to kg or height to meters.  
-- Display the user’s BMI category directly instead of requiring them to trace a graph manually.
+▶️ **Usage**  
+- Enter your **weight in kg** and **height in meters** when prompted  
+- The program calculates your BMI and tells you your category  
 
-🛠️ Technologies Used  
-C#, .NET Console Application
+💡 Example:  
+Input:  
+Weight = 70  
+Height = 1.75  
 
-📚 What I Learned  
-- Using `Math.Pow()` and floating-point arithmetic in C#  
-- Accepting multiple user inputs via `Console.ReadLine()`  
-- Rounding numbers with `Math.Round()`  
+Output:  
+Your BMI is 22.86  
+You are Normal weight ✅  
+
+🚀 **Future Improvements**  
+- ✅ Add input validation with double.TryParse()  
+- ✅ Allow height input in cm or ft/inches  
+- ✅ Later expand into a GUI or web app version  
+
+📚 **What I Learned**  
+- ✍️ Capturing user input with Console.ReadLine()  
+- 🔄 Converting strings to numbers using Convert.ToDouble()  
+- 📏 Rounding numbers with Math.Round()  
+- 🔀 Using if / else if / else to classify results  
+
