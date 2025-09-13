@@ -92,7 +92,7 @@ namespace BMI_Calculator
             }
             else
             {
-                 Console.WriteLine("Invalid Input, please enter a number (1 or 2).");
+                 Console.WriteLine("Invalid Input, please enter a real Option (1 or 2).");
             }
 
             Console.WriteLine("Press any key + Enter to exit...");
