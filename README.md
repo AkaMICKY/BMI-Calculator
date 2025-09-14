@@ -1,4 +1,4 @@
-BMI Calculator (C#)
+⚖️ BMI Calculator (C#)
 
 This is a simple **C# BMI Calculator** that allows you to calculate your Body Mass Index (BMI) using either **metric units (kg/m)** or **imperial units (lbs/inches)**.  
 It also classifies your BMI into **Underweight, Healthy, Overweight, or Obese**.
