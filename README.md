@@ -1,4 +1,4 @@
-# ⚖️ BMI Calculator (C#)
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b74a1315-aa6f-4d54-9761-5f1143c5bdf6" /># ⚖️ BMI Calculator (C#)
 
 This is a simple **C# BMI Calculator** that allows you to calculate your Body Mass Index (BMI) using either **metric units (kg/m)** or **imperial units (lbs/inches)**.  
 It also classifies your BMI into **Underweight, Healthy, Overweight, or Obese**.
@@ -50,4 +50,22 @@ Press any key + Enter to exit...
 - **≤ 18.5** → Underweight  
 - **≤ 25** → Healthy 🙂  
 - **≤ 30** → Overweight  
-- **> 30** → Obese 🚨
+- **> 30** → Obese 🚨  
+
+---
+
+## 🚀 Future Improvements
+
+- Add support for **stone/feet units**.  
+- Provide **health tips** based on BMI.  
+- Track **BMI history** over multiple runs.  
+- Add a **GUI version** for better user experience.  
+- Include **error logging** and more detailed validation.
+
+---
+
+## 👤 Author
+
+- **Akanmen Michael Eronmosele**  
+- Student, Programmer, and Builder 🚀  
+
