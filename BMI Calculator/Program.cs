@@ -18,77 +18,75 @@ namespace BMI_Calculator
             string choice = Console.ReadLine(  );
             if (int.TryParse(choice, out int CHOICE) )
             {
-                if (CHOICE == 1)
+                switch (CHOICE)
                 {
-                    Console.Write("What Is Your Weight(Kg)? : ");
-                    string Mass_kgm = Console.ReadLine();
-                    if (double.TryParse(Mass_kgm, out double MASS_KGM))
-                    {
-                        Console.Write("What is Height(Meters)? : ");
-                        string Height_kgm = Console.ReadLine();
-                        if (double.TryParse(Height_kgm, out double HEIGHT_KGM))
+                    case 1:
+                        Console.Write("What Is Your Weight(Kg)? : ");
+                        string Mass_kgm = Console.ReadLine();
+                        if (double.TryParse(Mass_kgm, out double MASS_KGM))
                         {
-                            if (MASS_KGM <= 0 || HEIGHT_KGM <= 0)
+                            Console.Write("What is Height(Meters)? : ");
+                            string Height_kgm = Console.ReadLine();
+                            if (double.TryParse(Height_kgm, out double HEIGHT_KGM))
                             {
-                                Console.WriteLine("Invalid Input(s), Value(s) must be Positive and Non-Zero");
+                                if (MASS_KGM <= 0 || HEIGHT_KGM <= 0)
+                                {
+                                    Console.WriteLine("Invalid Input(s), Value(s) must be Positive and Non-Zero");
+                                } else
+                                {
+                                    double HEIGHT2_KGM = Math.Pow(HEIGHT_KGM, 2); // SQUARES HEIGHT(HEIGHT*HEIGHT)
+                                    double BMI_KGM = MASS_KGM / HEIGHT2_KGM; //Divides MASS By Square of HEIGHT(HEIGHT2) 
+                                    double BMI_round = Math.Round(BMI_KGM, 2); //Rounds BMI to 2 Decimal Places
+                                    Console.WriteLine("Your BMI Is " + BMI_round);
+                                    PrintBMIClass(BMI_KGM);
+                                }
+
                             } else
                             {
-                                double HEIGHT2_KGM = Math.Pow(HEIGHT_KGM, 2); // SQUARES HEIGHT(HEIGHT*HEIGHT)
-                                double BMI_KGM = MASS_KGM / HEIGHT2_KGM; //Divides MASS By Square of HEIGHT(HEIGHT2) 
-                                double BMI_round = Math.Round(BMI_KGM, 2); //Rounds BMI to 2 Decimal Places
-                                Console.WriteLine("Your BMI Is " + BMI_round);
-                                PrintBMIClass(BMI_KGM);
+                                Console.WriteLine("Invalid Input, Please Input the Correct Values");
                             }
-                            
+
                         } else
                         {
-                            Console.WriteLine("Invalid Input, Please Input the Correct Values");
+                            Console.WriteLine("Invalid Input, Please Input The Correct Values");
                         }
-                        
-                    } else
-                    {
-                        Console.WriteLine("Invalid Input, Please Input The Correct Values");
-                    }
-                }
-                    
-                else if (CHOICE == 2)
-                {
-                    Console.Write("What Is Your Weight(Lbs)? : ");
-                    string Mass_lbsinch = Console.ReadLine();
-                    if (double.TryParse(Mass_lbsinch, out double MASS_LBSINCH))
-                    {
-                        Console.Write("What is Height(Inches)? : ");
-                        string Height_lbsinch = Console.ReadLine();
-                        if (double.TryParse(Height_lbsinch, out double HEIGHT_LBSINCH))
+                        break;
+                    case 2:
+                        Console.Write("What Is Your Weight(Lbs)? : ");
+                        string Mass_lbsinch = Console.ReadLine();
+                        if (double.TryParse(Mass_lbsinch, out double MASS_LBSINCH))
                         {
-                            if (MASS_LBSINCH <= 0 || HEIGHT_LBSINCH <= 0)
+                            Console.Write("What is Height(Inches)? : ");
+                            string Height_lbsinch = Console.ReadLine();
+                            if (double.TryParse(Height_lbsinch, out double HEIGHT_LBSINCH))
                             {
-                                Console.WriteLine("Invalid Input(s), Values Must Be Positive and Non-Zero");
-                            } else
-                            {
-                                double HEIGHT2_LBSINCH = Math.Pow(HEIGHT_LBSINCH, 2); // SQUARES HEIGHT(HEIGHT*HEIGHT)
-                                double BMI_LBSINCH = (MASS_LBSINCH / HEIGHT2_LBSINCH) * 703; //Divides MASS By Square of HEIGHT(HEIGHT2) 
-                                double BMI_round = Math.Round(BMI_LBSINCH, 2); //Rounds BMI to 2 Decimal Places
-                                Console.WriteLine("Your BMI Is " + BMI_round);
-                                PrintBMIClass(BMI_LBSINCH);
+                                if (MASS_LBSINCH <= 0 || HEIGHT_LBSINCH <= 0)
+                                {
+                                    Console.WriteLine("Invalid Input(s), Values Must Be Positive and Non-Zero");
+                                }
+                                else
+                                {
+                                    double HEIGHT2_LBSINCH = Math.Pow(HEIGHT_LBSINCH, 2); // SQUARES HEIGHT(HEIGHT*HEIGHT)
+                                    double BMI_LBSINCH = (MASS_LBSINCH / HEIGHT2_LBSINCH) * 703; //Divides MASS By Square of HEIGHT(HEIGHT2) 
+                                    double BMI_round = Math.Round(BMI_LBSINCH, 2); //Rounds BMI to 2 Decimal Places
+                                    Console.WriteLine("Your BMI Is " + BMI_round);
+                                    PrintBMIClass(BMI_LBSINCH);
+                                }
+
+
                             }
-                            
-                            
-                        } else
-                        {
-                            Console.WriteLine("Invalid Input, Please Input the Correct Values");
+                            else
+                            {
+                                Console.WriteLine("Invalid Input, Please Input the Correct Values");
+                            }
+
                         }
-                        
-                    } else
-                    {
-                        Console.WriteLine("Invalid Input, Please Input the Correct Values");
-                    }
-                    
-                }
-                else
-                {
-                    Console.WriteLine("Please Pick a Real Option, " + CHOICE + " is not an Option");
-                }
+                        break;
+                    default:
+                      Console.WriteLine("Please Pick a Real Option, " + CHOICE + " is not an Option");
+                    break;
+                } 
+               
             }
             else
             {
